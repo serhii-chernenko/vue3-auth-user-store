@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 .page {
-  @apply h-screen flex items-center justify-center gap-3 p-4;
+    @apply h-screen flex items-center justify-center gap-3 p-4;
 }
 .container {
-  @apply max-w-full w-96;
+    @apply max-w-full w-96;
 }
 
 .card {
-  @apply shadow-xl  bg-base-200;
+    @apply shadow-xl  bg-base-200;
 }
 
 label {
-  @apply w-full max-w-xs form-control;
+    @apply w-full max-w-xs form-control;
 }
 input {
-  @apply w-full max-w-xs input input-bordered;
+    @apply w-full max-w-xs input input-bordered;
 }
 
 .card-actions {
-  @apply justify-end mt-3 items-center justify-between;
+    @apply justify-end mt-3 items-center justify-between;
 }

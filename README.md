@@ -1,7 +1,7 @@
 ---
 difficulty: 1
 training: true
-chapter: "Chapter 3: Advanced State Management"
+chapter: 'Chapter 3: Advanced State Management'
 tags: vue
 ---
 
