@@ -1,9 +1,10 @@
 <script setup>
-import { useAuthUser } from '@/composables/useAuthUser'
-const { user, logout } = useAuthUser()
+import { useAuthUser } from '@/stores/useAuthUser'
+
+const { isLoggedIn, user, logout } = useAuthUser()()
 </script>
 <template>
-    <div class="card" v-if="user">
+    <div class="card" v-if="isLoggedIn">
         <div class="card-body">
             <div class="flex items-center gap-5">
                 <div class="avatar">

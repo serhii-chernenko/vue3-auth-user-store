@@ -1,16 +1,16 @@
 <script setup>
-import { useAuthUser } from '@/composables/useAuthUser'
+import { useAuthUser } from '@/stores/useAuthUser'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 
 const router = useRouter()
-const { login } = useAuthUser()
+const { login } = useAuthUser()()
 
 const error = ref('')
 
 const form = ref({
-    username: '',
-    password: '',
+    username: 'johndoe',
+    password: 'vueisawesome',
 })
 
 async function handleSubmit() {
